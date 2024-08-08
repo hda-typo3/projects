@@ -1,5 +1,5 @@
 {
-    "name": "hda/projects",
+    "name": "hda-typo3/projects",
     "type": "typo3-cms-extension",
     "description": "",
     "authors": [
@@ -11,9 +11,6 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "typo3/cms-core": "^11.5"
-    },
-    "require-dev": {
-        "typo3/testing-framework": "^6.9.0"
     },
     "autoload": {
         "psr-4": {
