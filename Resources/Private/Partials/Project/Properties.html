@@ -1,0 +1,62 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-projects">
+	<tr>
+		<td><f:translate key="tx_projects_domain_model_project.title" /></td>
+		<td>{project.title}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_projects_domain_model_project.teaser" /></td>
+		<td>{project.teaser}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_projects_domain_model_project.description" /></td>
+		<td>{project.description}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_projects_domain_model_project.studentsfreetext" /></td>
+		<td>{project.studentsfreetext}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_projects_domain_model_project.lecturersfreetext" /></td>
+		<td>{project.lecturersfreetext -> f:format.date()}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_projects_domain_model_project.date" /></td>
+		<td>{project.date -> f:format.date()}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_projects_domain_model_project.copartner" /></td>
+		<td>{project.copartner}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_projects_domain_model_project.copartnerlink" /></td>
+		<td>{project.copartnerlink}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_projects_domain_model_project.topimage" /></td>
+		<td>
+				<f:image src="{project.topimage.originalResource.publicUrl}" width="200"/>
+            </td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_projects_domain_model_project.media" /></td>
+		<td>
+				<f:image src="{project.media.originalResource.publicUrl}" width="200"/>
+            </td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_projects_domain_model_project.thumbimage" /></td>
+		<td>
+				<f:image src="{project.thumbimage.originalResource.publicUrl}" width="200"/>
+            </td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_projects_domain_model_project.lightboxstyle" /></td>
+		<td>{project.lightboxstyle}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_projects_domain_model_project.path_segment" /></td>
+		<td>{project.pathSegment}</td>
+	</tr>
+</table>
+</html>

@@ -1,0 +1,22 @@
+
+config.tx_extbase {
+  persistence {
+    classes {
+
+      Hda\Projects\Domain\Model\Students {
+        mapping {
+          tableName = fe_users
+          recordType = Tx_Projects_Students
+        }
+      }
+
+      Hda\Projects\Domain\Model\Lecturers {
+        mapping {
+          tableName = fe_users
+          recordType = Tx_Projects_Lecturers
+        }
+      }
+
+    }
+  }
+}

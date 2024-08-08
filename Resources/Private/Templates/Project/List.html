@@ -1,0 +1,62 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+This template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Project:
+          List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+    <h1>Listing for Project</h1>
+
+    <f:flashMessages />
+
+    <table class="tx_projects">
+        <tr>
+            <th><f:translate key="tx_projects_domain_model_project.title" /></th>
+            <th><f:translate key="tx_projects_domain_model_project.teaser" /></th>
+            <th><f:translate key="tx_projects_domain_model_project.description" /></th>
+            <th><f:translate key="tx_projects_domain_model_project.studentsfreetext" /></th>
+            <th><f:translate key="tx_projects_domain_model_project.lecturersfreetext" /></th>
+            <th><f:translate key="tx_projects_domain_model_project.date" /></th>
+            <th><f:translate key="tx_projects_domain_model_project.copartner" /></th>
+            <th><f:translate key="tx_projects_domain_model_project.copartnerlink" /></th>
+            <th><f:translate key="tx_projects_domain_model_project.topimage" /></th>
+            <th><f:translate key="tx_projects_domain_model_project.media" /></th>
+            <th><f:translate key="tx_projects_domain_model_project.thumbimage" /></th>
+            <th><f:translate key="tx_projects_domain_model_project.lightboxstyle" /></th>
+            <th><f:translate key="tx_projects_domain_model_project.path_segment" /></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <f:for each="{projects}" as="project">
+            <tr>
+                <td><f:link.action action="show" arguments="{project : project}">{project.title}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{project : project}">{project.teaser}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{project : project}">{project.description}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{project : project}">{project.studentsfreetext}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{project : project}">{project.lecturersfreetext -> f:format.date()}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{project : project}">{project.date -> f:format.date()}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{project : project}">{project.copartner}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{project : project}">{project.copartnerlink}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{project : project}">{project.topimage.originalResource.name}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{project : project}">{project.media.originalResource.name}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{project : project}">{project.thumbimage.originalResource.name}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{project : project}">{project.lightboxstyle}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{project : project}">{project.pathSegment}</f:link.action></td>
+                <td><f:link.action action="edit" arguments="{project : project}">Edit</f:link.action></td>
+                <td><f:link.action action="delete" arguments="{project : project}">Delete</f:link.action></td>
+            </tr>
+        </f:for>
+    </table>
+
+    <f:link.action action="new">New Project</f:link.action>
+</f:section>
+</html>
