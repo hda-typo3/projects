@@ -1,1 +1,1 @@
-New vesion
+UPDATE `sys_file_reference` SET `tablenames` = 'tx_projects_domain_model_project' WHERE `tablenames` = 'tx_fbgproject_domain_model_project' ;
