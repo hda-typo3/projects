@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="EXT:fbgproject/Resources/Private/Language/locallang_db" date="2021-03-11T16:34:15Z" product-name="fbgproject">
+		<header/>
+		<body>
+			<trans-unit id="project" >
+				<source>Projects</source>
+				<target state="translated">Projekte</target>
+			</trans-unit>
+
+			<trans-unit id="title">
+				<source>Project title</source>
+				<target state="translated">Projekt Titel</target>
+			</trans-unit>
+			<trans-unit id="teaser">
+				<source>Teaser</source>
+				<target state="translated">Kurzinformation</target>
+			</trans-unit>
+			<trans-unit id="description">
+				<source>Description</source>
+				<target state="translated">Beschreibung</target>
+			</trans-unit>
+
+
+			<trans-unit id="students">
+				<source>Student</source>
+				<target state="translated">Studierende</target>
+			</trans-unit>
+			<trans-unit id="lecturers">
+				<source>Lecturers</source>
+				<target state="translated">Betreuende</target>
+			</trans-unit>
+			<trans-unit id="studentsfreetext">
+				<source>Freetext for students</source>
+				<target state="translated">Freitext Studierende (nur wenn keine Studierenden ausgewählt sind)</target>
+			</trans-unit>
+			<trans-unit id="lecturersfreetext">
+				<source>Freetext for lecturers</source>
+				<target state="translated">Freitext Betreuung (nur wenn keine Dozenten ausgewählt sind)</target>
+			</trans-unit>
+			<trans-unit id="date">
+				<source>Date</source>
+				<target state="translated">Freitext Datum (nur wenn kein Semester ausgewählt ist)</target>
+			</trans-unit>
+			<trans-unit id="copartner">
+				<source>Cooperation partners</source>
+				<target state="translated">Kooperationspartner</target>
+			</trans-unit>
+			<trans-unit id="copartnerlink">
+				<source>Link to the cooperation partners</source>
+				<target state="translated">Link zum Kooperationspartner</target>
+			</trans-unit>	
+			<trans-unit id="thumbimage">
+				<source>Thumb image</source>
+				<target state="translated">Thumbnail Bild</target>
+			</trans-unit>	
+			<trans-unit id="topimage">
+				<source>Topimage</source>
+				<target state="translated">Top-Bild</target>
+			</trans-unit>
+			<trans-unit id="media">
+				<source>Media</source>
+				<target state="translated">Medienelemente (max 7) </target>
+			</trans-unit>
+			<trans-unit id="semester">
+				<source>Semester</source>
+				<target state="translated">Semester</target>
+			</trans-unit>
+			<trans-unit id="semester.title">
+				<source>Title</source>
+				<target state="translated">Semester Bezeichnung</target>
+			</trans-unit>			
+			<trans-unit id="category">
+				<source>Category</source>
+				<target state="translated">Kategorie</target>
+			</trans-unit>
+			<trans-unit id="category.title">
+				<source>Title</source>
+				<target state="translated">Kategorie Bezeichnung</target>
+			</trans-unit>			
+			
+
+			<trans-unit id="name">
+				<source>FBG Project Plugin</source>
+			</trans-unit>
+
+			
+			<trans-unit id="degreecourse">
+				<source>Degreecourse</source>
+				<target state="translated">Studiengang</target>
+			</trans-unit>
+			<trans-unit id="degreecourse.title">
+				<source>Title</source>
+				<target state="translated">Studiengangsname</target>	
+			</trans-unit>
+	
+			<trans-unit id="fbgproject.sheet">
+				<source>Options</source>
+				<target state="translated">Optionen</target>
+			</trans-unit>	
+
+             <trans-unit id="fbgproject.startingpoint">
+                <source>Startingpoint</source>
+				<target state="translated">Startpunkt</target>
+            </trans-unit>           
+            <trans-unit id="fbgproject.switch">
+                <source>Select a view</source>
+ 				<target state="translated">Wähle eine Sicht aus</target>
+            </trans-unit>
+            <trans-unit id="fbgproject.choose">
+                <source>Please select</source>
+				<target state="translated">Bitte wählen</target>
+            </trans-unit>
+             <trans-unit id="fbgproject.list">
+                <source>List view</source>
+				<target state="translated">Listenansicht</target>
+            </trans-unit>
+            <trans-unit id="fbgproject.single">
+                <source>Single view</source>
+				<target state="translated">Detailansicht</target>
+            </trans-unit>
+             <trans-unit id="fbgproject.selection">
+                <source>Selected projects</source>
+				<target state="translated">Ausgewählte Projekte</target>
+            </trans-unit>                                           
+             <trans-unit id="fbgproject.all">
+                <source>All files with a seacharea</source>
+				<target state="translated">Sämtliche Projekte mit Suchfeld</target>
+            </trans-unit>         
+             <trans-unit id="fbgproject.semester">
+                <source>Semester</source>
+            </trans-unit>        
+             <trans-unit id="fbgproject.degreecourse">
+                <source>Degreecourse</source>
+				<target state="translated">Studiengang</target>
+            </trans-unit>         
+             <trans-unit id="fbgproject.categories">
+                <source>Categories</source>
+                <target state="translated">Kategorie</target>
+            </trans-unit>              
+             <trans-unit id="fbgproject.singleproject">
+                <source>Single project</source>
+                <target state="translated">Einzelnes Projekt</target>
+            </trans-unit>              
+             <trans-unit id="fbgproject.individualprojects">
+                <source>Individual selection</source>
+                <target state="translated">Ausgewählte Projekte, überstimmt die obige Auswahl!</target>
+            </trans-unit>                
+              <trans-unit id="fbgproject.detailpage">
+                <source>Detailpage</source>
+                <target state="translated">Seite für die Einzelansicht</target>
+            </trans-unit>                
+              <trans-unit id="fbgproject.listpage">
+                <source>Listpage</source>
+                <target state="translated">Seite für die Listenansicht</target>
+            </trans-unit>                          
+			
+			<trans-unit id="select">
+				<source>Please select</source>
+				<target state="translated">Bitte wählen</target>
+			</trans-unit>			
+			
+			<trans-unit id="list">
+				<source>List view with three elements</source>
+				<target state="translated">Listenansicht</target>
+			</trans-unit>			
+			
+			<trans-unit id="detail">
+				<source>Single view for details</source>
+				<target state="translated">Detailansicht</target>
+			</trans-unit>		
+			
+			/* -- LIGHTBOX ------------------------ */
+		    <trans-unit id="lightboxstyle">
+			     <source>Lightbox effects</source>
+			     <target state="translated">Lightbox Effekt</target>
+		    </trans-unit>	
+		    <trans-unit id="lightboxstyle0">
+			     <source>none</source>
+			     <target state="translated">keine</target>
+		    </trans-unit>		    
+		    <trans-unit id="lightboxstyle1">
+			     <source>Simple effect</source>
+			     <target state="translated">Einfach</target>
+		    </trans-unit>	
+		    <trans-unit id="lightboxstyle2">
+			     <source>Simple effect with close buttton</source>
+			     <target state="translated">Mit Schließbutton</target>
+		    </trans-unit>	
+		    <trans-unit id="lightboxstyle3">
+			     <source>Gallery with Navigation</source>
+			     <target state="translated">Mit Navigation</target>
+		    </trans-unit>		    
+		    <trans-unit id="lightboxstyle4">
+			     <source>Gallery with Arrows</source>
+			     <target state="translated">Mit Richtungspfeilen</target>
+		    </trans-unit>	
+		    <trans-unit id="lightboxstyle5">
+			     <source>Gallery with Navigation and Arrows</source>
+			     <target state="translated">Mit Richtungspfeilen und Navigation</target>
+		    </trans-unit>
+			
+		</body>
+	</file>
+</xliff>

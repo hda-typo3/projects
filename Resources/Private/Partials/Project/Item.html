@@ -1,0 +1,138 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+
+	<div class="teaser middlewall" itemscope="itemscope">
+		 <f:link.action action="show" pageUid="283" arguments="{project : project}">
+			<div class="Item p-3">
+				<f:if condition="{settings.degreecourseShow}">
+					<span class="wall-category d-block">project.degreecourse.title}</span>
+				</f:if>
+				<span class="wall-headline" itemprop="headline">{project.title}</span>
+							
+				<f:if condition="{settings.studentShow}">				
+					<span class="wall-teaser d-block" >
+						<f:if condition="{project.students}">
+							<f:then>
+								<f:for each="{project.students}" as="stud" iteration="iterator"> 
+									<f:if condition="{iterator.isLast}">
+										<f:then>				
+											{stud.firstName} {stud.lastName}
+										</f:then>	
+										<f:else>				
+											{stud.firstName} {stud.lastName}, 
+										</f:else>										
+									</f:if> 
+								</f:for>
+							</f:then>
+							<f:else>
+								{project.studentsfreetext}
+							</f:else>
+						</f:if>
+					</span>		
+				</f:if>						 
+			</div>		 
+				<f:if condition="{project.thumbimage}">
+					<f:then>		
+						<f:render section="thumbpicture" arguments="{_all}"/>
+					</f:then>
+					<f:else>
+						<f:render section="topicture" arguments="{_all}"/>
+					</f:else>
+				</f:if>		
+		 </f:link.action>
+	</div>
+ 
+
+	<f:section name="thumbpicture">
+		<picture class="wall-img-wrap h-100 w-100">
+		
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560', fileExtension: 'webp')}" media="(min-width: 1601px)" type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560', fileExtension: 'jpeg')}" media="(min-width: 1601px)" type="image/jpeg">
+						
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1600', fileExtension: 'webp')}" media="(min-width: 1334px)" type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1600', fileExtension: 'jpeg')}" media="(min-width: 1334px)" type="image/jpeg">
+	
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1333', fileExtension: 'webp')}" media="(min-width: 1001px)" type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1333', fileExtension: 'jpeg')}" media="(min-width: 1001px)" type="image/jpeg">	 
+	
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1000', fileExtension: 'webp')}" media="(min-width: 801px)"type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1000', fileExtension: 'jpeg')}" media="(min-width: 801px)"type="image/jpeg">
+	
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '800',  fileExtension: 'webp')}" media="(min-width: 601px)"type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '800',  fileExtension: 'jpeg')}" media="(min-width: 601px)"type="image/jpeg">
+	
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '600',  fileExtension: 'webp')}" media="(min-width: 481px)"type="image/webp">	
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '600',  fileExtension: 'jpeg')}" media="(min-width: 481px)"type="image/jpeg">	
+	
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480',  fileExtension: 'webp')}" media="(min-width: 321px)"type="image/webp">		 
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480', fileExtension: 'jpeg')}" media="(min-width: 321px)"type="image/jpeg">		 
+	
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '320', fileExtension: 'webp')}" media="(min-width: 241px)"type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '320', fileExtension: 'jpeg')}" media="(min-width: 241px)"type="image/jpeg">
+	
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '240', fileExtension: 'webp')}" media="(min-width: 161px)"type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '240', fileExtension: 'jpeg')}" media="(min-width: 161px)"type="image/jpeg">
+	
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '160', fileExtension: 'webp')}" media="(min-width: 121px)"type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '160', fileExtension: 'jpeg')}" media="(min-width: 121px)"type="image/jpeg">
+	
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '120', fileExtension: 'webp')}" media="(min-width: 81px)"type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '120', fileExtension: 'jpeg')}" media="(min-width: 81px)"type="image/jpeg">
+	
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '80',  fileExtension: 'webp')}" type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '80',  fileExtension: 'jpeg')}" type="image/jpeg">
+	
+			<img src="{f:uri.image(src:'{project.thumbimage.uid}', treatIdAsReference:'1', cropVariant: 'default')}" alt="project thumbimage" />
+
+					
+		</picture>
+	</f:section>
+
+	<f:section name="topicture">
+		<picture class="wall-img-wrap h-100 w-100">
+		
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560', fileExtension: 'webp')}" media="(min-width: 1601px)" type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560', fileExtension: 'jpeg')}" media="(min-width: 1601px)" type="image/jpeg">
+						
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1600', fileExtension: 'webp')}" media="(min-width: 1334px)" type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1600', fileExtension: 'jpeg')}" media="(min-width: 1334px)" type="image/jpeg">
+	
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1333', fileExtension: 'webp')}" media="(min-width: 1001px)" type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1333', fileExtension: 'jpeg')}" media="(min-width: 1001px)" type="image/jpeg">	 
+	
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1000', fileExtension: 'webp')}" media="(min-width: 801px)"type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1000', fileExtension: 'jpeg')}" media="(min-width: 801px)"type="image/jpeg">
+	
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '800',fileExtension: 'webp')}" media="(min-width: 601px)"type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '800',fileExtension: 'jpeg')}" media="(min-width: 601px)"type="image/jpeg">
+	
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '600',fileExtension: 'webp')}" media="(min-width: 481px)"type="image/webp">	
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '600',fileExtension: 'jpeg')}" media="(min-width: 481px)"type="image/jpeg">	
+	
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480',fileExtension: 'webp')}" media="(min-width: 321px)"type="image/webp">		 
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480',fileExtension: 'jpeg')}" media="(min-width: 321px)"type="image/jpeg">		 
+	
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '320',fileExtension: 'webp')}" media="(min-width: 241px)"type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '320',fileExtension: 'jpeg')}" media="(min-width: 241px)"type="image/jpeg">
+	
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '240',fileExtension: 'webp')}" media="(min-width: 161px)"type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '240',fileExtension: 'jpeg')}" media="(min-width: 161px)"type="image/jpeg">
+	
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '160',fileExtension: 'webp')}" media="(min-width: 121px)"type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '160',fileExtension: 'jpeg')}" media="(min-width: 121px)"type="image/jpeg">
+	
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '120',fileExtension: 'webp')}" media="(min-width: 81px)"type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '120',fileExtension: 'jpeg')}" media="(min-width: 81px)"type="image/jpeg">
+	
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '80',	fileExtension: 'webp')}" type="image/webp">
+			<source srcset="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '80',	fileExtension: 'jpeg')}" type="image/jpeg">
+	
+			<img src="{f:uri.image(src:'{project.topimage.uid}', treatIdAsReference:'1', cropVariant: 'default')}" alt="project thumbimage" />
+
+					
+		</picture>
+	</f:section>
+
+	 
+</html>

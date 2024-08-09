@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2023-03-11T16:34:15Z" product-name="fbgproject">
+		<header/>
+		<body>
+			
+			<trans-unit id="students">
+				<source>Students</source>
+				<target state="translated">Studierende</target>
+			</trans-unit>			
+			
+			<trans-unit id="lecturers">
+				<source>Care</source>
+				<target state="translated">Betreuung</target>
+			</trans-unit>	
+			
+			<trans-unit id="category">
+				<source>Category</source>
+				<target state="translated">Kategorie</target>
+			</trans-unit>			
+			
+			<trans-unit id="degreecourse">
+				<source>Degreecourse</source>
+				<target state="translated">Studiengang</target>
+			</trans-unit>
+
+			<trans-unit id="date">
+				<source>Date</source>
+				<target state="translated">Jahr</target>
+			</trans-unit>
+			
+			<trans-unit id="semester">
+				<source>Year</source>
+				<target state="translated">Jahr</target>
+			</trans-unit>							
+			
+			<trans-unit id="copartner">
+				<source>Cooperation partner</source>
+				<target state="translated">Kooperationspartner</target>
+			</trans-unit>
+			
+			<trans-unit id="copartnerlink">
+				<source>Link to the cooperation partner</source>
+				<target state="translated">Link zum Kooperationspartner</target>
+			</trans-unit>	
+			
+		</body>
+	</file>
+</xliff>
