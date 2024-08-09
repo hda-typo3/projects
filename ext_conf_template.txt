@@ -1,0 +1,8 @@
+
+
+# cat=PageTS; type=string; label=Lectures UIDs
+userGroupLecturesUid 				= 
+
+# cat=PageTS; type=string; label=Student UIDs
+userGroupStudentsUid 				= 
+
