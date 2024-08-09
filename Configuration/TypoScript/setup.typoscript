@@ -1,0 +1,97 @@
+page.includeCSS.project = {$plugin.tx_projects.settings.scss} 
+
+
+
+plugin.tx_projects_pi1 {
+    view {
+        templateRootPaths.0 = EXT:projects/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_projects.view.templateRootPath}
+        partialRootPaths.0 = EXT:projects/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_projects.view.partialRootPath}
+        layoutRootPaths.0 = EXT:projects/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_projects.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_projects.persistence.storagePid}
+        #recursive = 1
+        classes {
+      		Hda\Project\Domain\Model\Lecturers {
+        		mapping {
+	          		tableName = fe_users
+	            	recordType = 0
+          		}
+        	}
+      	}        
+    }
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+        # Should be on by default, but can be disabled if all action in the plugin are uncached
+        requireCHashArgumentForActionArguments = 1
+    }
+
+
+}
+
+plugin.tx_projects_pi2 {
+    view {
+        templateRootPaths.0 = EXT:projects/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_projects.view.templateRootPath}
+        partialRootPaths.0 = EXT:projects/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_projects.view.partialRootPath}
+        layoutRootPaths.0 = EXT:projects/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_projects.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_projects.persistence.storagePid}
+        #recursive = 1
+        classes {
+      		Hda\Project\Domain\Model\Lecturers {
+        		mapping {
+	          		tableName = fe_users
+	            	recordType = 0
+          		}
+        	}
+      	}        
+    }
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+        # Should be on by default, but can be disabled if all action in the plugin are uncached
+        requireCHashArgumentForActionArguments = 1
+    }
+
+
+}
+
+plugin.tx_projects_pi3 {
+    view {
+        templateRootPaths.0 = EXT:projects/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_projects.view.templateRootPath}
+        partialRootPaths.0 = EXT:projects/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_projects.view.partialRootPath}
+        layoutRootPaths.0 = EXT:projects/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_projects.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_projects.persistence.storagePid}
+        #recursive = 1
+        classes {
+      		Hda\Project\Domain\Model\Lecturers {
+        		mapping {
+	          		tableName = fe_users
+	            	recordType = 0
+          		}
+        	}
+      	}        
+    }
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+        # Should be on by default, but can be disabled if all action in the plugin are uncached
+        requireCHashArgumentForActionArguments = 1
+    }
+}

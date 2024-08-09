@@ -1,0 +1,64 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Measure</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>                           
+                    
+                      <settings.itemPerPage>
+                        <TCEforms>
+                            <exclude>0</exclude>
+                            <label>Item per page</label>
+                            <config>
+                                <type>input</type>
+                                <size>1</size>
+                                <default>10</default>
+                                <eval>int</eval>
+                                <range>
+                                    <lower>1</lower>
+                                    <upper>100</upper>
+                                </range>
+                                <wizards>
+                                    <slideshow>
+                                        <type>slider</type>
+                                        <step>1</step>
+                                    </slideshow>
+                                </wizards>
+                            </config> 
+                        </TCEforms>
+                    </settings.itemPerPage>
+                    
+                    <settings.maximumLinks>
+                        <TCEforms>
+                            <exclude>0</exclude>
+                            <label>maximum Links</label>
+                            <config>
+                                <type>input</type>
+                                <size>1</size>
+                                <default>10</default>
+                                <eval>int</eval>
+                                <range>
+                                    <lower>1</lower>
+                                    <upper>100</upper>
+                                </range>
+                                <wizards>
+                                    <slideshow>
+                                        <type>slider</type>
+                                        <step>1</step>
+                                    </slideshow>
+                                </wizards>
+                            </config> 
+                        </TCEforms>
+                    </settings.maximumLinks> 
+                             
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>
