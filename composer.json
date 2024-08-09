@@ -10,7 +10,9 @@
     ],
     "license": "GPL-2.0-or-later",
     "require": {
-        "typo3/cms-core": "^11.5"
+        "typo3/cms-core": "^11.5",
+        "georgringer/numbered-pagination",
+        "plan2net/webp"
     },
     "autoload": {
         "psr-4": {
