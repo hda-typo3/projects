@@ -11,8 +11,8 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "typo3/cms-core": "^11.5",
-        "georgringer/numbered-pagination",
-        "plan2net/webp"
+        "georgringer/numbered-pagination": "^2.0",
+        "plan2net/webp": "^5.1"
     },
     "autoload": {
         "psr-4": {
